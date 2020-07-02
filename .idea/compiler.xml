@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="generic-project.applications.application-jvm-1.commonMain~1" target="11" />
+      <module name="generic-project.applications.application-jvm-1.commonTest~1" target="11" />
+      <module name="generic-project.applications.application-jvm-1.jvmMain~1" target="11" />
+      <module name="generic-project.applications.application-jvm-1.jvmTest~1" target="11" />
+      <module name="generic-project.integrations.integration-jvm-1.commonMain" target="11" />
+      <module name="generic-project.integrations.integration-jvm-1.commonTest" target="11" />
+      <module name="generic-project.integrations.integration-jvm-1.jvmMain" target="11" />
+      <module name="generic-project.integrations.integration-jvm-1.jvmTest" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
