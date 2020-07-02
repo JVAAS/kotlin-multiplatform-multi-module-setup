@@ -1,3 +1,5 @@
+package com.generic.applications
+
 import com.generic.modules.Module1
 
 object Application {
