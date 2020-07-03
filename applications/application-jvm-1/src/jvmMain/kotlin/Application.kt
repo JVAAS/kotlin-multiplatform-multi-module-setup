@@ -1,6 +1,6 @@
 package com.generic.applications
 
-import com.generic.modules.*
+import ModuleJvm1
 
 object Application {
 
