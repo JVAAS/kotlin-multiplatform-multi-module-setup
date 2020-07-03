@@ -65,5 +65,5 @@ kotlin {
 }
 
 application {
-	mainClassName = "Harakati"
+	mainClassName = "Application"
 }
