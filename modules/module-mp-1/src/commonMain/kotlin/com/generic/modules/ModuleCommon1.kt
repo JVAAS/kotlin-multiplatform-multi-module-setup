@@ -2,10 +2,10 @@ package com.generic.modules
 
 import com.generic.integrations.IntegrationJvm
 
-class Module1 {
+class ModuleCommon1 {
 
 	override fun toString(): String {
-		return IntegrationJvm().toString() + "::Module1"
+		return "Module1Common1"
 	}
 
 }

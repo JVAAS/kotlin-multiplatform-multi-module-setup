@@ -1,6 +1,6 @@
 package com.generic.applications
 
-import com.generic.modules.Module1
+import com.generic.modules.*
 
 object Application {
 
@@ -9,7 +9,7 @@ object Application {
 
 		println("TEST")
 
-		println(Module1().toString())
+		println(ModuleJvm1().toString())
 
 	}
 

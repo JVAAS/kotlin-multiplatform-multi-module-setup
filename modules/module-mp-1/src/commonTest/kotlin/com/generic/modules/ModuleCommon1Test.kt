@@ -1,6 +1,9 @@
 package com.generic.modules
 
-class Module1Test  {
+import kotlin.test.Test
+import kotlin.test.assertEquals
+
+class ModuleCommon1Test  {
 
 	@Test
 	fun genericTest() {
