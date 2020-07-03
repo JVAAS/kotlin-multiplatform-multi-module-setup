@@ -23,6 +23,14 @@ repositories {
 }
 
 kotlin {
+
+	configurations {
+		val platformAttr = Attribute.of("org.jetbrains.kotlin.platform.type", org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType::class.java)
+		all {
+			attributes.attribute(platformAttr, org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType.jvm)
+		}
+	}
+
 	jvm {
 		compilations.all {
 			kotlinOptions.jvmTarget = "11"
@@ -35,6 +43,9 @@ kotlin {
 		val coroutinesVersion = "1.3.7-1.4-M2"
 
 		val jvmMain by getting {
+
+
+
 			dependencies {
 				implementation(kotlin("stdlib-jdk8"))
 				implementation(kotlin("reflect"))

@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackOutput.Target
 
 plugins {
 	val kotlinVersion = "1.4-M2"
-	kotlin("jvm") version "1.4-M2"
 	kotlin("multiplatform") version kotlinVersion
+	kotlin("plugin.serialization") version kotlinVersion
 }
 group = "com.generic.modules"
 version = "1.0.0"
@@ -17,8 +17,8 @@ repositories {
 	maven {
 		url = uri("https://kotlin.bintray.com/kotlinx")
 	}
-	gradlePluginPortal()
 }
+
 
 kotlin {
 
