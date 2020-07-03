@@ -8,7 +8,11 @@ class ModuleJvm1 {
 
 	@ExperimentalJsExport
 	override fun toString(): String {
-		return ModuleCommon1().toString() + "::ModuleJvm1" + "::" + IntegrationJvm().toString()
+		return listOf(
+			ModuleCommon1().toString(),
+			"ModuleJvm1",
+			IntegrationJvm().toString(),
+		).joinToString(separator = "::")
 	}
 
 
