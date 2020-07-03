@@ -22,14 +22,14 @@ repositories {
 	gradlePluginPortal()
 }
 
-kotlin {
-
-	configurations {
-		val platformAttr = Attribute.of("org.jetbrains.kotlin.platform.type", org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType::class.java)
-		all {
-			attributes.attribute(platformAttr, org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType.jvm)
-		}
+configurations {
+	val platformAttr = Attribute.of("org.jetbrains.kotlin.platform.type", org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType::class.java)
+	all {
+		attributes.attribute(platformAttr, org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType.jvm)
 	}
+}
+
+kotlin {
 
 	jvm {
 		compilations.all {
