@@ -1,21 +1,16 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackOutput.Target.UMD
 
+group = "com.generic.modules"
+
 plugins {
 	val kotlinVersion = "1.4-M2"
 	kotlin("multiplatform") version kotlinVersion
 	kotlin("plugin.serialization") version kotlinVersion
 }
-group = "com.generic.modules"
+
 
 repositories {
-	jcenter()
-	mavenCentral()
-	maven {
-		url = uri("https://dl.bintray.com/kotlin/kotlin-eap")
-	}
-	maven {
-		url = uri("https://kotlin.bintray.com/kotlinx")
-	}
+
 }
 
 

@@ -9,15 +9,7 @@ plugins {
 group = "com.generic.integrations"
 
 repositories {
-	jcenter()
-	mavenCentral()
-	maven {
-		url = uri("https://dl.bintray.com/kotlin/kotlin-eap")
-	}
-	maven {
-		url = uri("https://kotlin.bintray.com/kotlinx")
-	}
-	gradlePluginPortal()
+	// add extra repositories in here that's not in root
 }
 
 kotlin {

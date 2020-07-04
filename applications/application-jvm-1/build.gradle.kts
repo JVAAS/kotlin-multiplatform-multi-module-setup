@@ -10,23 +10,8 @@ plugins {
 group = "com.generic.applications"
 
 repositories {
-	jcenter()
-	mavenCentral()
-	maven {
-		url = uri("https://dl.bintray.com/kotlin/kotlin-eap")
-	}
-	maven {
-		url = uri("https://kotlin.bintray.com/kotlinx")
-	}
-	gradlePluginPortal()
+	// add extra repositories in here that's not in root
 }
-
-//configurations {
-//	val platformAttr = Attribute.of("org.jetbrains.kotlin.platform.type", org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType::class.java)
-//	all {
-//		attributes.attribute(platformAttr, org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType.jvm)
-//	}
-//}
 
 kotlin {
 
@@ -42,8 +27,6 @@ kotlin {
 		val coroutinesVersion = "1.3.7-1.4-M2"
 
 		val jvmMain by getting {
-
-
 
 			dependencies {
 				implementation(kotlin("stdlib-jdk8"))
