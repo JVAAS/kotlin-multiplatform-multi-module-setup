@@ -6,7 +6,6 @@ plugins {
 	kotlin("plugin.serialization") version kotlinVersion
 }
 group = "com.generic.modules"
-version = "1.0.0"
 
 repositories {
 	jcenter()

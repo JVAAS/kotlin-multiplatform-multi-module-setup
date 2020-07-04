@@ -1,4 +1,9 @@
+allprojects {
 
+	version = "1.0.0"
+
+
+}
 
 
 project("modules:module-mp-1") {

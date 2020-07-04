@@ -7,7 +7,6 @@ plugins {
 }
 
 group = "com.generic.integrations"
-version = "1.0.0"
 
 repositories {
 	jcenter()

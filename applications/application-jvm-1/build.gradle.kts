@@ -8,7 +8,6 @@ plugins {
 }
 
 group = "com.generic.applications"
-version = "1.0.0"
 
 repositories {
 	jcenter()
